@@ -1,211 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Program</title>
+<title>Hotel Room Booking Form</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ background-color: #f2f2f2;
+ }
+h2 {
+text-align: center;
+}
+table {
+margin: auto;
+background-color: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0px 0px 10px gray;
+}
+td {
+padding: 8px;
+}
+input, select, textarea {
+width: 100%;
+padding: 5px;
+}
+.btn {
+background-color: green;
+color: white;
+border: none;
+padding: 8px;
+cursor: pointer;
+}
+.btn:hover {
+background-color: darkgreen;
+}
+</style>
 </head>
 <body>
-    <p>This is first paragraph.</p>
-    <br><!-- Line break added here -->
-    <p>This is second paragraph.</p>
-    <!-- This is a comment -->
-     <h1>This is a heading</h1>
-    <h2>This is a subheading</h2>
-    <h3>This is a smaller heading</h3>  
-    <h4>This is an even smaller heading</h4>
-    <h5>This is a tiny heading</h5>
-    <h6>This is the smallest heading</h6>
-    <hr><!-- Horizontal line added here -->
-    <p>This is a paragraph with <b>bold</b> text, <i>italic</i> text, and <u>underlined</u> text.</p>
-    <a href="https://google.com">This is a link to Google</a>
-    <br>
-    <img src="HEROSCREEN Luffy.png" alt="Placeholder Image" width="200" height="200">
-    <br>
-    <big>This text is big.</big>
-    <br>
-    <small>This text is small.</small>
-    <br>
-    <p>H <sub>2</sub>O</p><!-- Subscript example -->
-    <p>E = mc <sup>2</sup></p><!-- Superscript example -->
-    <pre>This is         is a sample text   .</pre> <!-- Used to display text as it is (without ignorimg spaces and next line) -->
-    <br>
-    <!-- Page Layout Techniques
-     using Semantic tags for layout -->
-     <header>
-        <pre><p>education           projects</p></pre>
-        <main>
-            <section><!-- Section for education -->
-                <h2>Education</h2>
-                <p>This is the education section.</p>
-            </section>
-            <section><!-- Section for projects -->
-                <h2>Projects</h2>
-                <p>This is the projects section.</p>
-            </section>
-            <article>my project</article><!--for an article on your page-->
-            <aside>This is an add.</aside><!-- for ads or you can say for content aside main content -->
-            <br>
-            <a href="https://youtube.com" target="_main">youtube</a><!-- target attribute to open link in same tab -->
-            <br>
-            <a href="https://google.com" target="_blank">google</a><!-- target attribute to open link in new tab -->
-            <br>
-            <a href="https://facebook.com" target="_self">facebook</a><!-- target attribute to open link in new tab -->
-            <br>
-            <a href="https://instagram.com" target="_parent">instagram</a><!-- target attribute to open link in parent frame -->
-            <br>
-            <a href="https://twitter.com" target="_top">twitter</a><!-- target attribute to open link in full body of the window -->
-            <br>
-            <a href="https://youtube.com" target="_main">
-                <img src="youtube logo.webp"  alt=""></a><!--this is how you can make image clickable-->
-                <!-- target attribute to open link in same tab -->
-
-        </main>
-        <footer>
-            <p>Copyright © 2023</p>
-        </footer>
-        <!--Div Tag (div is a comtainer for other HTML elements BLOCK element, takes full width)-->
-        <div>
-            <p>hello</p>
-            <p>namaste</p>
-            <p>hii</p>
-
-        </div>
-        <div>
-            <p>bye</p>
-            <p>see you</p>
-            <p>take care</p>
-        </div>
-        <!--list of (DIV) tags(takes full width)
-        <address>, <article>, <aside>, <blockquote>, <canvas>, <dd>, <div>, <dl>, <dt>, <fieldset>, <figcaption>, <figure>, <footer>, <form>, <h1> to <h6>, <header>, <hr>, <li>, <main>, <nav>, <noscript>, <ol>, <p>, <pre>, <section>, <table>, <tfoot>, <ul>, and more.
-        -->
-        <!--Span Tag (span is a container for other HTML elements INLINE element, takes only as much width as necessary)-->
-        <span>This is span tag</span>
-        <span>This is another span tag</span>
-        <!--list of (SPAN) inline tags(takes only as much width as necessary)
-
-        <a>, <b>, <i>, <u>, <strong>, <em>, <small>, <mark>, <del>, <ins>, <sub>, <sup>, <code>, <pre>, <img>, <br>, <hr>, <input>, <label>, <select>, <textarea>, and <button> </span> tags.
-        --> 
-
-
-     </header>
-     <!--LIST IN HTML-->
-     <ul><!-- unordered list-->
-        <li>mango</li>
-          <ul>
-            <li>color: yellow</li> <!--nested list or sublist-->
-            <li>season: summer</li>
-          </ul>
-        <li>banana</li>
-          <ul>
-            <li>color: yellow</li>
-            <li>season: all</li>
-          </ul>
-        <li>apple</li>
-          <ul>  
-            <li>color: red/green</li>
-            <li>season: all</li>
-          </ul>
-        <li>orange</li>
-        <li>grapes</li>
-     </ul>
-        <ol><!-- ordered list-->
-            <li>mango</li>
-            <ul>
-                <li>color: yellow</li>
-                <li>season: summer</li>
-              </ul>
-            <li>banana</li>
-            <li>apple</li>
-            <li>orange</li>
-            <li>grapes</li>
-        </ol>
-        <!--TABLES IN HTML-->
-        <table>
-            <caption>Personal Information</caption><!-- Caption for the table -->
-            <thead>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>ISHANT</td>
-                <td>18</td>
-            </tr>
-            </tbody>
-            <br>
-        </table>
-        <table>
-            <colspan="2"><!-- to merge two columns -->
-             <caption>Personal Information</caption><!-- Caption for the table -->
-            <thead>
-            <tr>
-                <th>Information</th>
-            </tr>s
-            </thead>
-            <tbody>
-            <tr>
-                <td>ISHANT</td>
-                <td>18</td>
-            </tr>
-            </tbody>
-        </table>
-        <!--form in HTML-->
-        <form action="/action.php">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="age">Age:</label>
-            <input type="number" id="age" name="age"><br><br>
-            <input type="submit" value="Submit">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password"><br><br>
-            <form action="/action.php">
-                <input type="submit" value="Submit">
-                <label for="email">E-Mail</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email">
-                <label for="101">
-                    <input type="radio" value="class X" id="101">class X
-
-                </label>
-                <!--Check box-->
-                <label for="math">
-                    <input type="checkbox" value="math" name="subject" id=101> MATH
-                </label>
-                 <label for="physics">
-                    <input type="checkbox" value="physics" name="subject" id=102> PHYSICS
-                </label>
-                 <label for="chemistry">
-                    <input type="checkbox" value="chemistry" name="subject" id=103> CHEMISTRY
-                </label>
-                 <label for="english">
-                    <input type="checkbox" value="english" name="subject" id=104> ENGLISH
-                </label><br><br>
-                <br>
-
-
-                <!--text area -->
-                <textarea name="feedback" id="101" placeholder="please give your valuable feedback here" height="500" width="300" rows="5" column="10">feedback </textarea>
-                <select name="city" id="106">
-                <option value="delhi">Delhi</option>
-                <option value="pune">pune</option>
-                <option value="hyderabad">hyderabad</option>
-                </select>
-                <input type="submit">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/UAYYgSLQMU0?si=KcqZp9FRd1L2Tc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <br>
-                <br>
-                <video src="https://www.youtube.com/embed/UAYYgSLQMU0?si=KcqZp9FRd1L2Tc" controls loop autoplay> my video </video>
-
-
-
-            </form>
-
-        </form>
-        <br>
-        
-
-
+<h2>Hotel Booking Form</h2>
+<form>
+<table border="1">
+<tr>
+<td>Full Name</td>
+<td><input type="text" name="name"></td>
+</tr>
+<tr>
+<td>Email</td>
+<td><input type="email" name="email"></td>
+</tr>
+<tr>
+<td>Phone Number</td>
+<td><input type="tel" name="phone"></td>
+</tr>
+<tr>
+<td>Check-in Date</td>
+<td><input type="date" name="checkin"></td>
+</tr>
+<tr>
+<td>Check-out Date</td>
+<td><input type="date" name="checkout"></td>
+</tr>
+<tr>
+<td>Room Type</td>
+<td>
+<select name="room">
+<option>Single</option>
+<option>Double</option>
+<option>Deluxe</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Number of Guests</td>
+<td><input type="number" name="guests"></td>
+</tr>
+<tr>
+<td>Special Requests</td>
+<td><textarea rows="3"></textarea></td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Book Now" class="btn">
+</td>
+</tr>
+</table>
+</form>
 </body>
 </html>
